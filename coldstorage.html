@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" ng-app="coldstorageApp">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="/assets/1ed4515/jquery.min.js"></script>
+<title ng-bind="$root.siteMeta.title_prefix+' '+$root.siteMeta.title+' '+$root.siteMeta.title_suffix">
+                        Shop Online              | Cold Storage        </title>
+        <meta name="description" content="{{$root.siteMeta.description}}">
+        <meta name="keywords" content="{{$root.siteMeta.keywords}}">
+        <meta name="apple-itunes-app" content="app-id=986236336">
+        <meta name="google-play-app" content="app-id=com.vi8e.coldstorage">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="android-touch-icon" href="android-icon.png"/>
+
+        <meta id="myviewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="fragment" content="!">
+        <script src="//use.typekit.net/chw4ltm.js"></script>
+        <script>
+            try {
+                Typekit.load();
+            } catch (e) {
+            }
+        </script>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/vendor.95a9a3a8.css">
+        <link rel="stylesheet" href="styles/main.babab9d7.css">
+        <link rel="stylesheet" href="styles/flipbook.style.css">
+
+        <base href="https://coldstorage.com.sg/"></base>
+        <script type="text/javascript">
+            var ga_id = 'UA-58020786-1';
+            var recaptcha_key = '6LerSv8SAAAAAGC7y9Siyc4J3E51Io4dgg7Q-e-d'
+            var vst = '0';
+            var base_url = 'https://coldstorage.com.sg/';
+            var referer_url = '';
+            var link_xmas_microsite = false;
+            var is_show_newsletter_popup = true;
+            var end_date_time = new Date(Date.UTC(2016,11,20,16,0,0,0)).getTime(); 
+            var microsite_ends = true;
+            var header_extra_link_enabled = true;
+            var header_extra_link = {};
+            //header_extra_link.target = 'shop-online.child.grandchild';
+            //header_extra_link.params = {catslug:'deals',gcatslug:'flavours-of-the-world?'};
+            //header_extra_link.target = 'page';
+            //header_extra_link.params = {pageslug:'oishi-festival'};
+            header_extra_link.target_url = 'shop-online/deals/flavours-of-the-world?utm_source=Web&utm_medium=blurb&utm_campaign=FOTW'; 
+            header_extra_link.img_src    = 'cs-fotw.png';
+
+
+//alert(end_date_time);
+            //var timecountdown = end_date_time - new Date(); 
+
+            
+
+            var oSesame = false;
+
+            // Avoid `console` errors in browsers that lack a console.
+            (function () {
+                var method;
+                var noop = function () {
+                };
+                var methods = [
+                    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+                    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+                    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+                    'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+                ];
+                var length = methods.length;
+                var console = (window.console = window.console || {});
+                while (length--) {
+                    method = methods[length];
+                    // Only stub undefined methods.
+                    if (!console[method]) {
+                        console[method] = noop;
+                    }
+                }
+            }());
+
+        </script>
+        <script src="//www.google.com/recaptcha/api.js?onload=vcRecapthaApiLoaded&render=explicit" async defer></script>
+                <script type="text/javascript">
+            var vco_help_url = 'https://secure.checkout.visa.com/customer_support/faq?locale=en';
+            var onVisaCheckoutReady = (function(){});
+            var onVisaPaymentComplete = (function(payment){});
+        </script>
+        <style id="antiClickjack">body{display:none;}</style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
+                <!--
+      <script type="text/javascript">var switchTo5x=true;</script>
+      <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+      <script type="text/javascript">stLight.options({publisher: "0284fc0e-5489-4e24-99d2-49ad44c553e9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+      -->
+
+        <!--script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script-->
+        <script type="text/javascript">
+
+        </script>
+    </head>
+
+    <body class="{{containerClass}}   " ng-class="{'showcart':showCart, 'showmobilesidebar':showMobileSidebar, 'showfooter':showFooter, 'showProductFilter':productFilterShown,'microsite':isMicrosite, 'show-inspiration-menu': $root.settingsConfig.show_inspiration_menu, 
+        'waitrose1':overrideTheme}">
+        <div id="container"></div>
+        <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+                        <div ng-bind-html="$root.doubleClick"></div>
+        <div ng-bind-html="$root.fbpixelTracker" style="display:none;"></div>
+        
+        <!-- Add your site or application content here -->
+        <div id="content-container" ui-view="main" autoscroll="false" class="gsapify-router">
+
+        </div>
+
+        <!-- Include Youtube library -->
+        <script src="https://www.youtube.com/iframe_api"></script>
+
+        <!--[if lt IE 9]>
+        <script src="bower_components/es5-shim/es5-shim.js"></script>
+        <script src="bower_components/json3/lib/json3.min.js"></script>
+        <![endif]-->
+
+        <script src="scripts/vendor.57b51640.js"></script>
+        <script src="scripts/plugins/flipbook.js"></script>
+        <script src="scripts/scripts.1a803ce8.js"></script>
+
+        <script type="text/javascript">
+            new SmartBanner({
+                daysHidden: 1,   // days to hide banner after close button is clicked (defaults to 15)
+                daysReminder: 3, // days to hide banner after "VIEW" button is clicked (defaults to 90)
+                title: 'Cold Storage Mobile',
+                author: 'Vi8e Interactive Pte Ltd',
+                button: 'VIEW',
+                store: {
+                    ios: 'On the App Store',
+                    android: 'In Google Play',
+                    windows: 'In Windows store'
+                },
+                price: {
+                    ios: 'FREE',
+                    android: 'FREE',
+                    windows: 'FREE'
+                }
+                // , force: 'ios' // Uncomment for platform emulation
+            });
+        </script>
+
+        <script type="text/javascript">
+            jQuery(document).ready(function () {
+                if (window.screen.width >= 768) {
+                    jQuery('meta[name=viewport]').attr('content', 'width=1280');
+                }
+
+                jQuery(window).on('resize', function () {
+
+                    if (window.screen.width >= 768) {
+                        jQuery('meta[name=viewport]').attr('content', 'width=1280');
+                    } else {
+                        jQuery('meta[name=viewport]').attr('content', 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui');
+                    }
+
+                });
+            });
+
+
+            /*
+a Pen by DIACO : twitter.com/Diaco_ml  ||  codepen.io/MAW
+powered by GSAP : http://www.greensock.com/
+*/
+/*
+TweenLite.set("#container",{perspective:600})
+TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+
+var total = 80;
+var warp = document.getElementById("container"),    w = window.innerWidth+100 , h = window.innerHeight;
+ 
+ for (i=0; i<total; i++){ 
+   var Div = document.createElement('div');
+   TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-200,-150),z:R(-200,200)});
+   warp.appendChild(Div);
+   animm(Div);
+ }
+ 
+ function animm(elm){   
+   TweenMax.to(elm,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
+   TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+   TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+ };
+
+function R(min,max) {return min+Math.random()*(max-min)};
+
+*/
+// a Pen by DIACO : twitter.com/Diaco_ml  ||  codepen.io/MAW
+
+        </script>
+    </body>
+</html>
