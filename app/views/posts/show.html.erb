@@ -1,0 +1,12 @@
+<h1>Posts#show</h1>
+<h2><%= @currentpost.title %></h2>
+<%= @currentpost.content %>
+<%= @currentpost.user.name %>
+
+
+<h3>comments by post</h3>
+<ul>
+<% @currentpost.comments.each do |e| %>
+  <li><%= e.content  %></li>
+<%  end %>
+</ul>

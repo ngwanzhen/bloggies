@@ -1,0 +1,41 @@
+<h1>Posts#index</h1>
+
+<%= form_tag posts_path, method: :get do %>
+<%= label_tag ("Search") %>
+  <%= text_field_tag(
+      :q) %>
+<% end %>
+
+<% @photodata["hits"].each do |p|%>
+<%= image_tag p["previewURL"], width: 100 %>
+<% end %>
+
+<% @news_data["articles"].each do |a| %>
+<h1><%= a["title"] %></h1>
+<p><%= a["description"] %></p>
+<% end  %>
+
+<%= form_for @new_post do |f| %>
+<%= f.label :title %>
+  <%= f.text_field :title %>
+<%= f.label :content %>
+  <%= f.text_field :content %>
+<!-- <%= f.label :content %> -->
+  <!-- <%= f.text_field :content %> -->
+<%= f.submit %>
+<% end %>
+
+<% @allposts.each do |e| %>
+<h2><%= e.title %></h2>
+<%= e.content %>
+<%= link_to "view", post_path(e) %>
+<%= link_to "delete", post_path(e), method: :delete %>
+<%= link_to "update", edit_post_path(e) %>
+<% end  %>
+
+<h3>comments by user</h3>
+<ul>
+<% current_user.comments.each do |e| %>
+  <li><%= e.content  %></li>
+<%  end %>
+</ul>
