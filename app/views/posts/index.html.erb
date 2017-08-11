@@ -2,8 +2,7 @@
 
 <%= form_tag posts_path, method: :get do %>
 <%= label_tag ("Search") %>
-  <%= text_field_tag(
-      :q) %>
+  <%= text_field_tag(:q) %>
 <% end %>
 
 <% @photodata["hits"].each do |p|%>

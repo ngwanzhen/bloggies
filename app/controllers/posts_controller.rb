@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     response = HTTParty.get(news_url)
     @news_data = response
 
-    q = 'thunderstorms'
+    q = params[:q]
     photo_url=
     "https://pixabay.com/api/?key=6144418-f9b2e4313d5eeb7cd0f166436&q=#{q}&image_type=photo"
     response = HTTParty.get(photo_url)
